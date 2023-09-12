@@ -1,0 +1,134 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A Biography of Bjarne Stroustrup</title>
+    <style>
+      body {
+        padding: 10px;
+      }
+      h2 {
+        text-decoration: underline;
+      }
+      article {
+        color: rgb(59, 59, 59);
+      }
+      label {
+        color: gray;
+      }
+      figcaption {
+        padding: 10px;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>A Biography of Bjarne Stroustrup</h1>
+      <hr>
+      <nav>
+        <a href="#overview">Overview</a> |
+        <a href="#career">Career</a> |
+        <a href="#awards">Awards</a> |
+        <a href="#contact">Contact Webmaster</a>
+        <hr>
+      </nav>
+    </header>
+    
+    <main>
+      <section id="overview" class="sections">
+        <aside>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/BjarneStroustrup.jpg" alt="BjarnePhoto" />
+          <figcaption>By Bjarne Stroustrup's homepage, Fair use, https://commons.wikimedia.org/wiki/File:BjarneStroustrup.jpg</figcaption>
+        </aside>
+        <h2>Overview</h2>
+        <article>
+          <p>
+            Bjarne Stroustrup, born on December 30th, 1950, was a computer scientist from Denmark who created a programming language known for it's efficiency and versatility and is still used to this day.
+            He developed the C++ programming language in the early 1980s while working at Bell Labs.
+          </p>
+        </article>
+      </section>
+      <section id="career" class="sections">
+        <h2>Career</h2>
+        <article>
+          <p>
+            He earned a Ph.D. in Computer Science from the University of Cambridge in 1979.
+            Bjarne held academic positions, including at Texas A&M University, and worked in the industry, including positions at Morgan Stanley.
+          </p>
+          <ol>
+            <li>Master's degree in Mathematics and Computer Science from Aarhus University</li>
+            <li>Ph.D. in Computer Science from the University of Cambridge</li>
+            <li>Morgan Stanley</li>
+          </ol>
+        </article>
+      </section>
+      <section id="awards" class="sections">
+        <h2>Awards and Recognition</h2>
+        <article>
+          <p>
+            Bjarne Stroustrup's work on C++ revolutionized software development, allowing for greater control and efficiency, which lead to him getting recognized for his work in this field.
+          </p>
+          <ul>
+            <li>Received the Dr. Dobb's Excellence in Programming Award.</li>
+            <li>Honored as a fellow of the Association for Computing Machinery (ACM).</li>
+            <li>Recognized with the prestigious Charles Stark Draper Prize.</li>
+            <li>Acknowledged as a fellow of the Computer History Museum.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <section id="contact" class="sections">
+        <h2>Contact the Webmaster</h2>
+        <article>
+          <p>
+            If you have any questions or issues, please contact me by putting your contact information and reason of contact in the boxes below.
+          </p>
+        </article>
+        <form action="">
+          <label>
+            email
+            <input type="email" placeholder="type email">
+          </label>
+          <label>
+            message
+            <input type="text" placeholder="type a message to the webmaster">
+          </label>
+        </form>
+      </section>
+    </footer>
+  </body>
+</html>
